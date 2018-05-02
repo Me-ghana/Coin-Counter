@@ -279,9 +279,9 @@ class CoinCalibration:
           keypoints = self.detector.detect(threshImage)
           nrOfBlobs = len(keypoints)
           
-          # Draw keypoints
-          im_with_keypoints = cv2.drawKeypoints(img, keypoints, np.array([]), (255, 0, 0),
-                                              cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
+          # Draw keypoints (used in tutorial, but we will later draw over this so commented out)
+          # im_with_keypoints = cv2.drawKeypoints(img, keypoints, np.array([]), (255, 0, 0),
+          #                                    cv2.DRAW_MATCHES_FLAGS_DRAW_RICH_KEYPOINTS)
           
           # Create a loop that iterates once for each detected blob
           for x in range(0,len(keypoints)):
