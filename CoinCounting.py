@@ -65,7 +65,7 @@ import math # for sqr root  operations
 # @distribution Unrestricted
 # @restrictions None
 # @ingroup modules
-class CoinVals:
+class CoinCounting:
     # ###################################################################################################
     ## Constructor
     def __init__(self):
